@@ -46,7 +46,7 @@ transformed data {
 
 
 parameters {
-  real<lower = 0> params[n_params];
+  real<lower = 0, upper = 1> params[n_params];
   real<lower = 0> Y0; // Initial fraction of hosts susceptible
   }
   
